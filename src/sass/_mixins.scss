@@ -1,0 +1,48 @@
+$space_amounts: (0, 8, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 160);
+$sides: (
+        "": "all",
+        "t": "top",
+        "b": "bottom",
+        "l": "left",
+        "r": "right",
+);
+
+@each $space in $space_amounts {
+  @each $prefix, $value in $sides {
+    $property: if($prefix == '', '', -#{$value});
+    .m#{$prefix}-#{$space} {
+      margin#{$property}: #{$space}px !important;
+    }
+    .p#{$prefix}-#{$space} {
+      padding#{$property}: #{$space}px !important;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  @each $space in $space_amounts {
+    @each $prefix, $value in $sides {
+      $property: if($prefix == '', '', -#{$value});
+      .m#{$prefix}-md-#{$space} {
+        margin#{$property}: #{$space}px !important;
+      }
+      .p#{$prefix}-md-#{$space} {
+        padding#{$property}: #{$space}px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  @each $space in $space_amounts {
+    @each $prefix, $value in $sides {
+      $property: if($prefix == '', '', -#{$value});
+      .m#{$prefix}-sm-#{$space} {
+        margin#{$property}: #{$space}px !important;
+      }
+      .p#{$prefix}-sm-#{$space} {
+        padding#{$property}: #{$space}px !important;
+      }
+    }
+  }
+}

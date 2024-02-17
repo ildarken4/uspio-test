@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title></title>
+</head>
+<body>
+<div class="wrapper">
+  
+  <header class="header">
+    <div class="container">
+      
+      <div class="header__top d-flex align-items-center justify-content-between">
+        
+        <div class="d-flex align-items-center mb-md-20 left">
+          <a href="index.html" class="header__logo">
+            <img src="images/header/logo.png" width="100%" alt="логотип">
+          </a>
+          <div class="header__splitter"></div>
+          <div class="header__salons mob-hidden">
+            <div class="header__city-title">
+              Текст текст
+            </div>
+            <div class="header__city-info">
+              <div class="city-selector">
+                <img src="images/header/pin-icon.svg" alt="значок геопозиции">
+                <div class="city-selector__name">
+                  Анапа (<span class="js-city-selector-count">10</span>)
+                </div>
+              </div>
+              
+              <div class="city-all">
+                <div class="text-grey">текст (<span class="js-city-all-count">10</span>)</div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+        
+        <div class="d-flex align-items-center mb-md-20 mb-sm-0 right">
+
+          <button class="btn header__btn mob-hidden" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+            <div class="btn__icon">
+              <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.384 3.328H14.672V14H1.056V3.328H3.328V12H6.72V3.328H9.008V12H12.384V3.328ZM20.8841 3.328H28.6761V5.328H23.1561V7.216H25.9241C27.0228 7.216 27.8868 7.54133 28.5161 8.192C29.1455 8.84267 29.4601 9.648 29.4601 10.608C29.4601 11.568 29.1455 12.3733 28.5161 13.024C27.8868 13.6747 27.0228 14 25.9241 14H20.8841V3.328ZM25.6201 9.216H23.1561V12H25.6201C26.0681 12 26.4308 11.872 26.7081 11.616C26.9961 11.36 27.1401 11.024 27.1401 10.608C27.1401 10.1813 26.9961 9.84533 26.7081 9.6C26.4308 9.344 26.0681 9.216 25.6201 9.216Z" fill="#76B926"/>
+                <path d="M1.862 28H1.134V21.238H1.862V24.178H5.698V21.238H6.426V28H5.698V24.822H1.862V28ZM18.7016 28H17.9596V22.232L15.6496 28H15.3836L13.0456 22.232V28H12.3176V21.238H13.2976L15.5096 26.726L17.6936 21.238H18.7016V28ZM30.2649 28H29.2849L26.5829 24.78L25.3229 25.97V28H24.5949V21.238H25.3229V25.102L29.3129 21.238H30.2789L27.1289 24.29L30.2649 28Z" fill="#76B926"/>
+              </svg>
+            </div>
+            Запишитесь на <br> проверку
+          </button>
+          <div class="d-flex align-items-center justify-content-end">
+            <div class="header__splitter"></div>
+            <div class="header__call mob-hidden">
+              <a href="tel:+7 (800) 111-111-1" class="header__phonenumber">
+                +7 (800) 111-111-1
+              </a>
+    
+              <div class="callback-trigger text-green" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                Перезвоните мне
+              </div>
+            </div>
+    
+            <div class="header__buttons">
+              <div class="header__wishlist">
+                <img src="images/header/heart-icon.svg" alt="значок избранное">
+                <div class="header__buttons-counter js-wishlist-count">
+                  7
+                </div>
+              </div>
+    
+              <div class="header__cart mr-16">
+                <img src="images/header/cart-icon.svg" alt="значок корзина">
+                <div class="header__buttons-counter js-cart-count">
+                  3
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-toggler">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="">Текст текст</a></li>
+            <li><a href="">Текст текст текст</a></li>
+            <li><a href="">Текст текст</a></li>
+            <li><a href="">Текст текст</a></li>
+            <li><a href="">Текст текст</a></li>
+            <li><a href="">Текст и текст</a></li>
+          </ul>
+
+            <div class="header__salons desk-hidden">
+              <div class="header__city-title">
+                Текст текст
+              </div>
+              <div class="header__city-info">
+                <div class="city-selector">
+                  <img src="images/header/pin-icon.svg" alt="значок геопозиции">
+                  <div class="city-selector__name">
+                    Анапа (<span class="js-city-selector-count">10</span>)
+                  </div>
+                </div>
+                
+                <div class="city-all">
+                  <div class="text-grey">текст (<span class="js-city-all-count">10</span>)</div>
+                </div>
+              </div>
+            </div>
+            <button class="btn header__btn desk-hidden" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                <div class="btn__icon">
+                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.384 3.328H14.672V14H1.056V3.328H3.328V12H6.72V3.328H9.008V12H12.384V3.328ZM20.8841 3.328H28.6761V5.328H23.1561V7.216H25.9241C27.0228 7.216 27.8868 7.54133 28.5161 8.192C29.1455 8.84267 29.4601 9.648 29.4601 10.608C29.4601 11.568 29.1455 12.3733 28.5161 13.024C27.8868 13.6747 27.0228 14 25.9241 14H20.8841V3.328ZM25.6201 9.216H23.1561V12H25.6201C26.0681 12 26.4308 11.872 26.7081 11.616C26.9961 11.36 27.1401 11.024 27.1401 10.608C27.1401 10.1813 26.9961 9.84533 26.7081 9.6C26.4308 9.344 26.0681 9.216 25.6201 9.216Z" fill="#76B926"/>
+                    <path d="M1.862 28H1.134V21.238H1.862V24.178H5.698V21.238H6.426V28H5.698V24.822H1.862V28ZM18.7016 28H17.9596V22.232L15.6496 28H15.3836L13.0456 22.232V28H12.3176V21.238H13.2976L15.5096 26.726L17.6936 21.238H18.7016V28ZM30.2649 28H29.2849L26.5829 24.78L25.3229 25.97V28H24.5949V21.238H25.3229V25.102L29.3129 21.238H30.2789L27.1289 24.29L30.2649 28Z" fill="#76B926"/>
+                  </svg>
+                </div>
+                Запишитесь на <br> проверку
+            </button>
+            <div class="header__call desk-hidden">
+                <a href="tel:+7 (800) 111-111-1" class="header__phonenumber">
+                  +7 (800) 111-111-1
+                </a>
+      
+                <div class="callback-trigger text-green" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                  Перезвоните мне
+                </div>
+            </div>
+        </nav>
+      </div>
+      <div class="header__search">
+        <img src="images/header/search-icon.svg" alt="значок поиск">
+        <input type="text">
+      </div>
+    </div>
+  </header>

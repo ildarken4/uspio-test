@@ -1,0 +1,31 @@
+input {
+    padding: 15px 30px;
+    background-color: map-get($colors, 'white');
+    border: 1px solid map-get($colors, 'green');
+    border-radius: 26px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.footer__form input {
+    width: 210px;
+}
+
+::placeholder { 
+    color: map-get($colors, 'black'); 
+} 
+  
+:-ms-input-placeholder { 
+    color: map-get($colors, 'black'); 
+} 
+  
+::-ms-input-placeholder { 
+    color: map-get($colors, 'black'); 
+} 
+
+
+.form-check-input:checked {
+    background-color: map-get($colors, $key: 'green');
+    border-color: map-get($colors, $key: 'green');
+    outline: none;
+}

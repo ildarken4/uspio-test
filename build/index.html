@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE = edge">
+        <![endif]-->
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title></title>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__top d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center mb-md-20 left"> <a href="index.html" class="header__logo">
+            <img src="images/header/logo.png" width="100%" alt="логотип">
+          </a>
+
+                            <div class="header__splitter"></div>
+                            <div class="header__salons mob-hidden">
+                                <div class="header__city-title">Текст текст</div>
+                                <div class="header__city-info">
+                                    <div class="city-selector">
+                                        <img src="images/header/pin-icon.svg" alt="значок геопозиции">
+                                        <div class="city-selector__name">Анапа (<span class="js-city-selector-count">10</span>)</div>
+                                    </div>
+                                    <div class="city-all">
+                                        <div class="text-grey">текст (<span class="js-city-all-count">10</span>)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-md-20 mb-sm-0 right">
+                            <button class="btn header__btn mob-hidden" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                <div class="btn__icon">
+                                    <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.384 3.328H14.672V14H1.056V3.328H3.328V12H6.72V3.328H9.008V12H12.384V3.328ZM20.8841 3.328H28.6761V5.328H23.1561V7.216H25.9241C27.0228 7.216 27.8868 7.54133 28.5161 8.192C29.1455 8.84267 29.4601 9.648 29.4601 10.608C29.4601 11.568 29.1455 12.3733 28.5161 13.024C27.8868 13.6747 27.0228 14 25.9241 14H20.8841V3.328ZM25.6201 9.216H23.1561V12H25.6201C26.0681 12 26.4308 11.872 26.7081 11.616C26.9961 11.36 27.1401 11.024 27.1401 10.608C27.1401 10.1813 26.9961 9.84533 26.7081 9.6C26.4308 9.344 26.0681 9.216 25.6201 9.216Z"
+                                        fill="#76B926" />
+                                        <path d="M1.862 28H1.134V21.238H1.862V24.178H5.698V21.238H6.426V28H5.698V24.822H1.862V28ZM18.7016 28H17.9596V22.232L15.6496 28H15.3836L13.0456 22.232V28H12.3176V21.238H13.2976L15.5096 26.726L17.6936 21.238H18.7016V28ZM30.2649 28H29.2849L26.5829 24.78L25.3229 25.97V28H24.5949V21.238H25.3229V25.102L29.3129 21.238H30.2789L27.1289 24.29L30.2649 28Z"
+                                        fill="#76B926" />
+                                    </svg>
+                                </div>Запишитесь на
+                                <br>проверку</button>
+                            <div class="d-flex align-items-center justify-content-end">
+                                <div class="header__splitter"></div>
+                                <div class="header__call mob-hidden"> <a href="tel:+7 (800) 111-111-1" class="header__phonenumber">
+                +7 (800) 111-111-1
+              </a>
+
+                                    <div class="callback-trigger text-green" data-bs-toggle="modal"
+                                    data-bs-target="#feedbackModal">Перезвоните мне</div>
+                                </div>
+                                <div class="header__buttons">
+                                    <div class="header__wishlist">
+                                        <img src="images/header/heart-icon.svg" alt="значок избранное">
+                                        <div class="header__buttons-counter js-wishlist-count">7</div>
+                                    </div>
+                                    <div class="header__cart mr-16">
+                                        <img src="images/header/cart-icon.svg" alt="значок корзина">
+                                        <div class="header__buttons-counter js-cart-count">3</div>
+                                    </div>
+                                </div>
+                                <div class="nav-toggler">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <li><a href="">Текст текст</a>
+
+                                </li>
+                                <li><a href="">Текст текст текст</a>
+
+                                </li>
+                                <li><a href="">Текст текст</a>
+
+                                </li>
+                                <li><a href="">Текст текст</a>
+
+                                </li>
+                                <li><a href="">Текст текст</a>
+
+                                </li>
+                                <li><a href="">Текст и текст</a>
+
+                                </li>
+                            </ul>
+                            <div class="header__salons desk-hidden">
+                                <div class="header__city-title">Текст текст</div>
+                                <div class="header__city-info">
+                                    <div class="city-selector">
+                                        <img src="images/header/pin-icon.svg" alt="значок геопозиции">
+                                        <div class="city-selector__name">Анапа (<span class="js-city-selector-count">10</span>)</div>
+                                    </div>
+                                    <div class="city-all">
+                                        <div class="text-grey">текст (<span class="js-city-all-count">10</span>)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn header__btn desk-hidden" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                <div class="btn__icon">
+                                    <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.384 3.328H14.672V14H1.056V3.328H3.328V12H6.72V3.328H9.008V12H12.384V3.328ZM20.8841 3.328H28.6761V5.328H23.1561V7.216H25.9241C27.0228 7.216 27.8868 7.54133 28.5161 8.192C29.1455 8.84267 29.4601 9.648 29.4601 10.608C29.4601 11.568 29.1455 12.3733 28.5161 13.024C27.8868 13.6747 27.0228 14 25.9241 14H20.8841V3.328ZM25.6201 9.216H23.1561V12H25.6201C26.0681 12 26.4308 11.872 26.7081 11.616C26.9961 11.36 27.1401 11.024 27.1401 10.608C27.1401 10.1813 26.9961 9.84533 26.7081 9.6C26.4308 9.344 26.0681 9.216 25.6201 9.216Z"
+                                        fill="#76B926" />
+                                        <path d="M1.862 28H1.134V21.238H1.862V24.178H5.698V21.238H6.426V28H5.698V24.822H1.862V28ZM18.7016 28H17.9596V22.232L15.6496 28H15.3836L13.0456 22.232V28H12.3176V21.238H13.2976L15.5096 26.726L17.6936 21.238H18.7016V28ZM30.2649 28H29.2849L26.5829 24.78L25.3229 25.97V28H24.5949V21.238H25.3229V25.102L29.3129 21.238H30.2789L27.1289 24.29L30.2649 28Z"
+                                        fill="#76B926" />
+                                    </svg>
+                                </div>Запишитесь на
+                                <br>проверку</button>
+                            <div class="header__call desk-hidden"> <a href="tel:+7 (800) 111-111-1" class="header__phonenumber">
+                  +7 (800) 111-111-1
+                </a>
+
+                                <div class="callback-trigger text-green" data-bs-toggle="modal"
+                                data-bs-target="#feedbackModal">Перезвоните мне</div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__search">
+                        <img src="images/header/search-icon.svg" alt="значок поиск">
+                        <input type="text">
+                    </div>
+                </div>
+            </header>
+            <section class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="hero__left col-lg-8 col-md-7">
+                            <div class="breadcrumbs"> <a class="breadcrumbs__item">
+              <img src="images/breadcrumbs/breadcrumbs-home.svg" alt="иконка домашней страницы">
+            </a>
+
+                                <div class="breadcrumbs__splitter">
+                                    <img src="images/breadcrumbs/breadcrumbs-splitter.svg" alt="разделитель">
+                                </div> <a class="breadcrumbs__item">
+              Текст текст
+            </a>
+
+                            </div>
+                             <h1 class="hero__title">
+            Заголовок <span class="text-green">текст текст</span> текст текст текст текст
+          </h1>
+
+                            <div class="hero__text">
+                                <p class="text-grey">текст текст, текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст.</p>
+                                <p>Текст – текст текст текст текст текст , текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст.</p>
+                            </div>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#feedbackModal">Записаться на проверку</button>
+                        </div>
+                        <div class="col">
+                            <img src="images/hero/hero-img.jpg" class="cover image-open" width="100%"
+                            alt="фото врач-офтальмолог" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container text-center">
+                     <h2>Заголовок заголовок заголовок</h2>
+
+                    <div class="row flex-wrap">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/trial-frame-icon.svg" alt="иконка пробная оправа">
+                                </div>
+                                <div class="advantage-card__text">
+                                    <p>Текст <span class="text-green">Текст текст</span> Текст текст Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/contact-lens-icon.svg" alt="иконка контактные линзы">
+                                </div>
+                                <div class="advantage-card__text">
+                                    <p>Текст Текст Текст Текст Текст
+                                        <br>Текст Текст
+                                        <br>Текст Текст Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/vision_eye-icon.svg" alt="иконка зрение">
+                                </div>
+                                <div class="advantage-card__text d-flex align-items-center justify-content-center">
+                                    <p>Текст Текст Текст
+                                        <br>Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/man-glasses-icon.svg" alt="иконка человек в очках">
+                                </div>
+                                <div class="advantage-card__text">
+                                    <p>Текст Текст Текст Текст
+                                        <br>Текст Текст
+                                        <br>Текст Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/glasses-icon.svg" alt="иконка очки">
+                                </div>
+                                <div class="advantage-card__text">
+                                    <p> <span class="text-green">Текст Текст Текст</span> ,
+                                        <br>Текст Текст Текст Текст
+                                        <br>Текст Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="advantage-card">
+                                <div class="advantage-card__icon">
+                                    <img src="images/advantages/doctor-icon.svg" alt="иконка офтальмолог">
+                                </div>
+                                <div class="advantage-card__text">
+                                    <p>Текст
+                                        <br>Текст Текст Текст
+                                        <br>Текст Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class=" btn btn_green" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <div class="btn__text">Записаться на проверку</div>
+                        <div class="btn__arrow">
+                            <img src="images/buttons/arrow-right.svg" alt="стрелка вправо">
+                        </div>
+                    </button>
+                </div>
+            </section>
+            <section class="list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                             <h2> Текст текст:</h2>
+
+                            <ul>
+                                <li>текст текст</li>
+                                <li>текст текст текст текст</li>
+                                <li>текст</li>
+                                <li>текст текст текст текст текст текст текст текст текст текст текст текст</li>
+                                <li>текст текст текст текст текст текст текст текст текст текст</li>
+                                <li>текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст</li>
+                            </ul>
+                        </div>
+                        <div class="col ml-32 ml-md-0">
+                            <img src="images/list/list-img.jpg" class="cover image-open" width="100%"
+                            alt="изображение проверка зрения" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work">
+                <div class="container">
+                     <h2>Заголовок</h2>
+
+                    <div class="works-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img src="images/work/work-img-1.jpeg" loading="lazy" width="100%" alt="фото офтальмолога"
+                                            class="image-open" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title mb-32">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img src="images/work/work-img-2.jpeg" loading="lazy" width="100%" alt="фото офтальмолога"
+                                            class="image-open" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img class="tall image-open" src="images/work/work-img-3.jpeg" loading="lazy"
+                                            width="100%" alt="фото офтальмолога" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст*</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img src="images/work/work-img-1.jpeg" loading="lazy" width="100%" alt="фото офтальмолога"
+                                            class="image-open" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title mb-32">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img src="images/work/work-img-2.jpeg" loading="lazy" width="100%" alt="фото офтальмолога"
+                                            class="image-open" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <div class="work-card__top">
+                                        <svg class="circle" width="265" height="265">
+                                            <circle cx="132.5" cy="132.5" r="112.5" fill="transparent" stroke="black"
+                                            stroke-width="40">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 132.5 132.5"
+                                                to="360 132.5 132.5" dur="15" repeatCount="indefinite"></animateTransform>
+                                            </circle>
+                                        </svg>
+                                        <div class="work-card__image">
+                                            <img class="tall image-open" src="images/work/work-img-3.jpeg" loading="lazy"
+                                            width="100%" alt="фото офтальмолога" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="green-border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="work-card__bottom">
+                                        <div class="work-card__title">Вопрос вопрос вопрос?</div>
+                                        <div class="work-card__text">Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст*</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-grey mt-20">*текст текст текст текст текст текст текст текст текст текст текст текст
+                        текст текст текст текст текст текст текст текст текст текст текст текст
+                        текст текст текст текст текст текст текст.</p>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <div class="row questions__wrapper">
+                        <div class="col-lg-8 questions__left">
+                             <h2>Вопрос вопрос вопрос вопрос вопрос вопрос вопрос?</h2>
+
+                            <ol>
+                                <li>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+                                <li>Текст Текст Текст Текст Текст Текст Текст</li>
+                                <li>Текст Текст Текст Текст Текст Текст Текст Текст</li>
+                                <li>Текст Текст Текст Текст Текст Текст Текст Текст Текст</li>
+                                <li>Текст Текст Текст Текст Текст Текст</li>
+                            </ol>
+                            <p>Текст текст текст текст текст текст текст текст текст текст текст текст
+                                текст текст текст текст текст текст текст текст текст текст текст текст
+                                текст текст текст текст текст текст текст текст текст текст текст текст
+                                текст текст текст текст текст текст текст текст текст текст текст текст
+                                .</p>
+                        </div>
+                        <div class="col">
+                            <img class="cover image-open" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            src="images/question/question-img.jpg" width="100%" alt="фото проверка зрения">
+                        </div>
+                    </div>
+                    <button class=" btn btn_green" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <div class="btn__text">Записаться на проверку</div>
+                        <div class="btn__arrow">
+                            <img src="images/buttons/arrow-right.svg" alt="стрелка вправо">
+                        </div>
+                    </button>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 d-flex justify-content-between">
+                                <div class="footer-top__title">Текст текст текст текст текст
+                                    <br>текст текст</div>
+                                <div class="footer__form">
+                                    <input type="email" id="emailInput" placeholder="Введите свой e-mail">
+                                    <button class="btn btn_green" id="send-email">Подписаться</button>
+                                </div>
+                            </div>
+                            <div class="socials col-lg-4">
+                                <div class="socials__title">МЫ В СОЦ. СЕТЯХ:</div>
+                                <div class="socials__btns"> <a class="socials__btn" href="#" target="_blank">
+                            <img src="images/socials/vk.svg" alt="иконка вконтакте">
+                        </a>
+ <a class="socials__btn" href="#" target="_blank">
+                            <img src="images/socials/facebook.svg" alt="иконка фейсбук">
+                        </a>
+ <a class="socials__btn" href="#" target="_blank">
+                            <img src="images/socials/instagram.svg" alt="иконка инстаграм">
+                        </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 footer-body__left mb-md-32 mb-sm-32"> <a href="#" class="footer__logo">
+                        <img src="images/footer/footer-logo.png" width="100%" alt="логотип компании">
+                    </a>
+
+                                <ul class="footer__contacts mb-20">
+                                    <li>
+                                        <img src="images/footer/phone-icon.svg" alt="иконка телефон"> <a href="tel:+7 (800) 111-111-1">+7 (800) 111-111-1</a>
+
+                                    </li>
+                                    <li>
+                                        <img src="images/footer/email-icon.svg" alt="иконка e-mail"> <a href="mailto:info@vimeo.ru">info@vimeo.ru</a>
+
+                                    </li>
+                                    <li>
+                                        <img src="images/footer/questions-icon.svg" alt="иконка вопрос"> <a class="underline">Задать вопрос</a>
+
+                                    </li>
+                                    <li class="mb-20">
+                                        <img src="images/footer/feedback-icon.svg" alt="иконка обратной связи"> <a class="underline">Оставить отзыв</a>
+
+                                    </li>
+                                </ul>
+                                <p class="text-grey">текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст</p>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 pl-24 pl-md-8">
+                                 <h4>Заголовок</h4>
+
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Названиеназвание</a>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                 <h4>Заголовок</h4>
+
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                 <h4>Заголовок Заголовок</h4>
+
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                 <h4>Заголовок Заголовок</h4>
+
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                        <li> <a href="">Название</a>
+
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container"> <a href="">Политика конфиденциальности</a>
+
+                        <div>© Все права защищены авторским правом</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modal modal-feedback" id="feedbackModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title">Проверим зрение?</h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Пожалуйста, заполните форму ниже, и мы свяжемся с Вами в течение 15 минут</p>
+                        <form
+                        class="pt-24">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Ваш email*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Номер телефона</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Я хочу получать информацию о новостях и акциях компании</label>
+                            </div>
+                            <button type="submit" class="btn">Отправить форму</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal image-modal" id="imageModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img id="modal-image" src="images/work/work-img-3.jpeg" alt="изображение">
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/swiper-bundle.js"></script>
+        <script src="./js/scripts.js"></script>
+    </body>
+
+</html>

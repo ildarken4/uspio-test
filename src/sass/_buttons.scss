@@ -1,0 +1,111 @@
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background-color: map-get($colors, 'white');
+    border: 1px solid map-get($colors, 'green');
+    border-radius: 26px;
+    font-weight: 700;
+    line-height: 22px;
+    transition: all 0.4s ease;
+
+    &__icon {
+        margin-right: 11px;
+    }
+
+    &:hover {
+        background-color: map-get($colors, 'green');
+        color: map-get($colors, 'white');
+        svg path {
+            fill: map-get($colors, 'white');
+        }
+    }
+
+    &_green {
+        background: map-get($colors, 'green-gradient');
+        padding-right: 10px;
+        color: map-get($colors, 'white');
+        border-radius: 35px;
+        box-shadow: 0px 10px 20px 0px rgba(132, 199, 55, 0.3);
+
+
+        &:hover {
+            .btn__arrow::before {
+                width: calc(100% - 20px);
+            }
+            .btn__arrow img {
+                transform: translateX(-15px);
+            }
+            .btn__text {
+                color: map-get($colors, 'black');
+                transform: translateX(15px);
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 2px;
+        position: relative;
+        z-index: 2;
+        transition: all 0.4s ease;
+    }
+
+    &__arrow {
+        background-color: map-get($colors, 'white');
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+
+        img {
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: map-get($colors, 'white');
+            border-radius: 30px;
+            transition: all 0.4s ease;
+        }
+    }
+}
+.header .btn {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    text-transform: none;
+    font-weight: 600;
+}
+.hero .btn {
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.footer .btn {
+    padding: 15px 30px;
+    text-transform: none;
+    font-weight: 600;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &.apply {
+        background: map-get($colors, 'black-gradient');
+    }
+}

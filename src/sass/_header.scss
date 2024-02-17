@@ -1,0 +1,370 @@
+.header {
+    &__top {
+        height: 92px;
+
+        .left {
+            justify-content: flex-start;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+    }
+    &__splitter {
+        height: 92px;
+        flex: none;
+        width: 1px;
+        background-color: map-get($colors, 'grey' );
+        margin-right: 30px;
+    }
+    &__logo {
+        display: block;
+        width: 200px;
+        margin-right: 13px;
+    }
+
+    &__city-title {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__city-info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-right: 67px;
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__phonenumber {
+        color: map-get($colors, 'black' );
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        transition: all 0.4s ease;
+        
+        &:hover {
+            color: map-get($colors, 'black-opacity' );
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 40px;
+
+        &>div {
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
+    &__wishlist {
+        margin-right: 40px;
+    }
+
+    &__buttons-counter {
+        position: absolute;
+        bottom: 15px;
+        right: -18px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        background-color: map-get($colors, 'green');
+        height: 23px;
+        width: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: map-get($colors, 'white' );
+        border-radius: 50%;
+    }
+
+    nav {
+        width: 100%;
+
+        
+        ul {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                padding: 0 28px;
+                
+                &:not(:last-child) {
+                    border-right: 1px solid rgba(0,0,0,.1);
+                }
+
+                a {
+                    color: map-get($colors, 'white');
+                }
+            }
+        }
+        
+        
+    }
+
+    &__bottom {
+        
+        background-color: map-get($colors, 'green');
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: map-get($colors, 'white');
+        box-shadow: inset 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        padding-left: 23px;
+        height: 68px;
+        width: 23vw;
+        background-color: map-get($colors, 'green-dark');
+        
+        input {
+            background-color: transparent;
+            color: map-get($colors, 'white');
+            border: none;
+            padding: 15px;
+            width: 90%;
+        }
+    }
+
+    .nav-toggler {
+        display: none;
+        position: relative;
+        z-index: 3000;
+        margin-left: 40px;
+    
+        .line {
+            height: 2px;
+            width: 32px;
+            background-color: map-get($colors, "black");
+            transition: all 0.5s ease;
+    
+            &:first-child {
+                position: relative;
+                margin-bottom: 8px;
+            }
+        }
+    
+    
+        &.active {
+            .line:first-child {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+            .line {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+
+    @media (max-width: 991px) {
+        nav {
+            position: fixed;
+            top: -100vh;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: map-get($colors, "white");
+            left: 0;
+            transition: all 0.6s ease;
+            z-index: 1000;
+
+            ul {
+                flex-direction: column;
+                height: fit-content;
+                margin-bottom: 20px;
+
+                li {
+                    margin-bottom: 20px;
+
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+
+                    a {
+                        font-size: 24px;
+                        line-height: 28px;
+                        color:  map-get($colors, "black");
+                    }
+
+                }
+            }
+            &.active {
+                top: 0;
+                z-index: 1000;
+
+            }
+
+            a {
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+        }
+        .nav-toggler {
+            display: block;
+        }
+    }
+}
+
+.city-selector {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding-right: 13px;
+    border-right: 1px solid map-get($colors, "grey-light");
+    margin-right: 10px;
+    color: map-get($colors, "green");
+    cursor: pointer;
+
+    &__name {
+        margin-left: 10px;
+
+    }
+}
+
+.callback-trigger {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    border-bottom: 1px dashed map-get($colors, "green");
+    width: fit-content;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .desk-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 1180px) {
+    .header {
+        &__city-info {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .city-selector{
+                border: none;
+            }
+        }
+
+        &__btn {
+            margin-right: 30px;
+        }
+
+        &__bottom {
+            height: auto;
+            flex-direction: column;
+
+        }
+
+        nav {
+            ul {
+                justify-content: center;
+            }
+        }
+        &__search {
+            width: 100%;
+        }
+    }   
+}
+
+@media (max-width:991px) {
+    .header {
+        overflow: visible;
+        &__top {
+            height: fit-content;
+            flex-direction: column;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            .left,
+            .right {
+                justify-content: space-between;
+            }
+
+            &>div {
+                width: 100%;
+            }
+        }
+        &__city-title {
+            text-align: center;
+            color: map-get($colors, "black");
+        }
+        &__city-info {
+            flex-direction: row;
+            align-items: center;
+
+            .city-selector{
+                border-right: 1px solid map-get($colors, "grey-light");
+            }
+        }
+        &__btn {
+            margin: 20px 0;
+        }
+        &__splitter {
+            display: none;
+        }
+        &__search {
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .header {
+        padding-top: 80px;
+        &__top {
+            flex-direction: row;
+            position: fixed;
+            background-color: map-get($colors, "white");
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100vw;
+
+            .right {
+                justify-content: flex-end;
+            }
+        }
+        &__logo {
+            max-width: 120px;
+        }
+        .mob-hidden {
+            display: none;
+        }
+        &__buttons {
+            margin-left: 0;
+            transform: scale(.8);
+
+        }
+        .nav-toggler {
+            margin-left: 16px;
+        }
+    }
+}

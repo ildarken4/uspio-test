@@ -1,0 +1,28 @@
+.hero {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: map-get( $colors, 'grey' );
+    &__left {
+        padding-top: 20px;
+        padding-bottom: 60px;
+        
+    }
+    &__title {
+        margin: 30px 0 60px;
+        max-width: 90%;
+    }
+
+    &__text {
+        max-width: 90%;
+    }
+    p {
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .hero__title {
+        margin: 30px 0 33px;
+    }
+}

@@ -1,0 +1,38 @@
+$colors: (
+        "white": rgba(255, 255, 255, 1),
+        "green": rgba(118, 185, 38, 1),
+        "green-dark": rgba(98, 165, 60, 1),
+        "green-opacity": rgba(118, 185, 38, .5),
+        "green-gradient": linear-gradient(90deg, #6CB644 0%, #82CA2C 100%),
+        "black": rgba(55, 69, 74, 1),
+        "black-opacity": rgba(55, 69, 74, .6),
+        "grey": rgba(244, 244, 244, 1),
+        "grey-light": rgba(223, 223, 223, 1),
+        "grey-dark": rgba(237, 238, 240, 1),
+        "black-gradient":  linear-gradient(90deg, #3f3f3f 0%, #000000 100%),
+);
+
+$grid-gutter-width: 16px;
+
+$container-max-widths: (
+        sm: 95vw,
+        xl: 1170px
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "swiper-bundle";
+@import "normalize";
+@import "mixins";
+@import "base";
+@import "forms";
+@import "buttons";
+@import "breadcrumbs";
+@import "advantages";
+@import "hero";
+@import "list";
+@import "questions";
+@import "work";
+@import "header";
+@import "footer";
+@import "modals";
+

@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        line-height: 16px;
+        margin-right: 8px;
+        color: map-get($colors, 'black-opacity');
+        cursor: pointer;
+
+        &:hover {
+            color: map-get($colors, 'black-opacity');
+            filter: brightness(.8);
+        }
+
+        img {
+            margin-bottom: 1px;
+        }
+    }
+
+    &__splitter {
+        margin-right: 8px;
+        margin-bottom: 1px;
+    }
+}

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+  
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "ProximaNova", sans-serif;
+    background-color: map-get($colors, "white");
+    // position: relative;
+    height: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: map-get($colors, "black");
+  }
+  
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .text-grey {
+    color: map-get($colors, 'black-opacity' );
+  }
+
+  .text-green {
+    color: map-get($colors, 'green' );
+  }
+  
+  img.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .modal-open {
+  //   overflow: hidden;
+  // }
